@@ -1,0 +1,23 @@
+footer{
+    max-width: 1440px;
+    margin:150px auto;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            li{
+                a{
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+}

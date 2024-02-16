@@ -1,0 +1,40 @@
+header {
+  max-width: 1440px;
+  margin: auto;
+  section {
+    display: flex;
+    justify-content: space-between;
+    nav {
+      ul {
+        display: flex;
+        li {
+          display: flex;
+          align-items: center;
+          a {
+            @include font_settings(700,24px);
+            color: white;
+
+            img {
+              width: 4.375rem;
+              height: 4.375rem;
+            }
+            .menu__img {
+              width: 2.2rem;
+              height: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .right__header {
+      display: flex;
+      gap: 1rem;
+      ul {
+        gap: 1rem;
+
+        li {
+        }
+      }
+    }
+  }
+}

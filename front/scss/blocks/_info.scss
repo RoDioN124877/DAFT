@@ -1,0 +1,47 @@
+.info__daft {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+  &::before {
+    content: "";
+    width: 81rem;
+    height: 300px;
+    background-image: url("../src/img/main/daft/lighting.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+    top: -200px;
+    pointer-events: none;
+  }
+  @include margin(150px);
+  h2 {
+    @include font_settings(700, 38px);
+  }
+  p {
+    font-family: "KGT", sans-serif;
+    @include font_settings(500, 38px);
+    max-width: 1440px;
+    text-align: center;
+  }
+}
+@media (max-width: 1450px) {
+  .info__daft {
+    &::before {
+      width: 65rem;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .info__daft {
+    &::before {
+      width: 55rem;
+      left: 100px;
+      top: -150px;
+    }
+  }
+}

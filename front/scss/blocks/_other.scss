@@ -1,0 +1,80 @@
+.other {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  justify-content: center;
+  align-items: center;
+  @include margin();
+  gap: 140px;
+  position: relative;
+ 
+  h2 {
+    color: white;
+    text-align: center;
+    @include font_settings(700, 48px);
+  }
+  .event_container {
+    width: 100%;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::after {
+      content: "";
+      width: 900px;
+      height: 750px;
+      background-image: url("../src/img/main/other/lighting2.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -210px;
+      left: 5rem;
+      pointer-events: none;
+    }
+    &::before {
+      content: "";
+      width: 800px;
+      height: 1100px;
+      background-image: url("../src/img/main/other/lighting.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -275px;
+      left: 13rem;
+      pointer-events: none;
+    }
+    .event {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1;
+      p {
+        color: red;
+        position: relative;
+        height: 21px;
+        @include font_settings(500, 24px);
+        width: 150px;
+        text-align: center;
+       
+      }
+      button {
+        height: 70px;
+        width: 210px;
+        background-color: #ffffff00;
+        border: 1px solid white;  
+        color: white;
+        padding: 8px 16px;
+        &:active {
+          transform: scale(1.03);
+        }
+        &:hover {
+          cursor: pointer;
+          
+        }
+        @include font_settings(500, 24px);
+      }
+    }
+  }
+}

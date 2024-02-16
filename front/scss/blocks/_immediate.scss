@@ -1,0 +1,98 @@
+.immediate {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  justify-content: center;
+  align-items: center;
+  @include margin();
+  gap: 100px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 600px;
+    height: 1200px;
+    background-image: url("../src/img/main/immediate/chain1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    pointer-events: none;
+  }
+  &::after {
+    content: "";
+    width: 1000px;
+    height: 1020px;
+    background-image: url("../src/img/main/immediate/chain2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    bottom: -150px;
+    pointer-events: none;
+  }
+  h2 {
+    color: white;
+    text-align: center;
+    @include font_settings(700, 48px);
+  }
+  .event_container {
+    width: 100%;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::after {
+      content: "";
+      width: 1300px;
+      height: 1400px;
+      background-image: url("../src/img/main/immediate/lightning.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -275px;
+      right: 20px;
+      pointer-events: none;
+    }
+    .event {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+        z-index: 1;
+      p {
+        color: red;
+        position: relative;
+        height: 21px;
+        @include font_settings (500,24px);
+        &::after {
+          content: "_________";
+          width: 0.5rem;
+          height: 1rem;
+          position: absolute;
+          bottom: -1rem;
+          left: -1px;
+          color: white;
+        }
+      }
+      button {
+        height: 70px;
+        width: 210px;
+        background-color: #1a1a1a;
+        border-radius: 1.3rem;
+        border: 0;
+        color: white;
+    
+        &:active{
+            transform: scale(1.03);
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: #131212
+        }
+        @include font_settings (500,24px);
+        
+      }
+    }
+  }
+}

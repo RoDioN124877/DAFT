@@ -1,0 +1,12 @@
+.make__some__noize {
+  background-image: url("../src/img/main/msn/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 600px;
+  @include margin(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
