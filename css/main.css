@@ -200,6 +200,56 @@ header section .right__header {
 header section .right__header ul {
   gap: 1rem;
 }
+@media (max-width: 1050px) {
+  .right__header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+  }
+  .right__header ul {
+    gap: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    max-width: 1440px;
+    margin: auto;
+  }
+  header section {
+    display: flex;
+    justify-content: space-between;
+  }
+  header section nav ul {
+    display: flex;
+  }
+  header section nav ul li {
+    display: flex;
+    align-items: center;
+  }
+  header section nav ul li a {
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+  }
+  header section nav ul li a img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  header section nav ul li a .menu__img {
+    width: 2.2rem;
+    height: 2rem;
+  }
+  header section .right__header {
+    display: flex;
+    gap: 1rem;
+  }
+  header section .right__header ul {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .photo {
   background-image: url("../src/img/main/maitPhoto.png");
   background-size: cover;
@@ -347,7 +397,6 @@ header section .right__header ul {
     position: absolute;
     top: 217px;
     right: 0px;
-    left: 25%;
     pointer-events: none;
   }
 }
@@ -552,7 +601,7 @@ header section .right__header ul {
   }
   .other .event_container::before {
     content: "";
-    width: 600px;
+    width: 500px;
     height: 1100px;
     background-image: url("../src/img/main/other/lighting.png");
     background-size: 100%;
@@ -573,19 +622,19 @@ header section .right__header ul {
     background-repeat: no-repeat;
     position: absolute;
     bottom: -210px;
-    left: 7rem;
+    left: -11rem;
     pointer-events: none;
   }
   .other .event_container::before {
     content: "";
-    width: 400px;
+    width: 600px;
     height: 1100px;
     background-image: url("../src/img/main/other/lighting.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: -275px;
-    left: 7rem;
+    left: -11rem;
     pointer-events: none;
   }
 }
@@ -649,7 +698,7 @@ header section .right__header ul {
 }
 @media (max-width: 800px) {
   .info__daft::before {
-    width: 47rem;
+    width: 26rem;
     left: 0px;
     top: -150px;
   }
