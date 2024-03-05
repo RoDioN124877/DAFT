@@ -228,7 +228,7 @@ header section .right__header ul {
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  left: 0px;
+  left: -50px;
   pointer-events: none;
 }
 .immediate::after {
@@ -239,7 +239,7 @@ header section .right__header ul {
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  right: 0px;
+  right: -50px;
   bottom: -150px;
   pointer-events: none;
 }
@@ -309,6 +309,48 @@ header section .right__header ul {
   background-color: #131212;
 }
 
+@media (max-width: 1050px) {
+  .immediate::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url("../src/img/main/immediate/bust1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: -120px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .immediate::after {
+    content: "";
+    width: 220px;
+    height: 200px;
+    background-image: url("../src/img/main/immediate/bust2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: -120px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .immediate .event_container::after {
+    content: "";
+    width: 370px;
+    height: 800px;
+    background-image: url("../src/img/main/immediate/bust3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 217px;
+    right: 0px;
+    left: 25%;
+    pointer-events: none;
+  }
+}
 .previe {
   background-image: url("../src/img/main/previe.png");
   background-size: cover;
@@ -495,6 +537,58 @@ header section .right__header ul {
   cursor: pointer;
 }
 
+@media (max-width: 1050px) {
+  .other .event_container::after {
+    content: "";
+    width: 730px;
+    height: 500px;
+    background-image: url("../src/img/main/other/lighting2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -210px;
+    left: 13rem;
+    pointer-events: none;
+  }
+  .other .event_container::before {
+    content: "";
+    width: 600px;
+    height: 1100px;
+    background-image: url("../src/img/main/other/lighting.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -275px;
+    left: 13rem;
+    pointer-events: none;
+  }
+}
+@media (max-width: 800px) {
+  .other .event_container::after {
+    content: "";
+    width: 600px;
+    height: 500px;
+    background-image: url("../src/img/main/other/lighting2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -210px;
+    left: 7rem;
+    pointer-events: none;
+  }
+  .other .event_container::before {
+    content: "";
+    width: 400px;
+    height: 1100px;
+    background-image: url("../src/img/main/other/lighting.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -275px;
+    left: 7rem;
+    pointer-events: none;
+  }
+}
 .previe3 {
   background-image: url("../src/img/main/previe3.png");
   background-size: cover;
@@ -550,6 +644,13 @@ header section .right__header ul {
   .info__daft::before {
     width: 55rem;
     left: 100px;
+    top: -150px;
+  }
+}
+@media (max-width: 800px) {
+  .info__daft::before {
+    width: 47rem;
+    left: 0px;
     top: -150px;
   }
 }
